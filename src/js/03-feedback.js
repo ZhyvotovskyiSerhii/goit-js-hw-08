@@ -27,7 +27,7 @@ feedbackForm.addEventListener('submit', formSubmit);
 function formSubmit(event) {
     event.preventDefault();
     if (feedbackForm.email.value === "" || feedbackForm.message.value === "") {  
-   return alert('incorrect input, please, fill inn all inputs before submit');
+   alert('incorrect input, please, fill inn all inputs before submit');
      }
       localStorage.removeItem(inputFormStorage);
       feedbackForm.reset();
